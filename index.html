@@ -2,103 +2,95 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="Все о настоящем американском городке Седона. Поможем найти плюсы и отели">
+    <meta name="keywords" content="седона, отпуск, америка, путешествия, большой каньон отстой">
     <title>HTML Academy: Sedona</title>
+    <link rel="stylesheet" href="/css/style.css">
   </head>
-  <body>
-      <header class="page-header">
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <img src="#" alt="Логотип города Седона" class="sedona-logo">
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link active-link">Главная</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">О седоне</a>
-            </li>
-            <li class="nav-item">
-              <a href="/catalog.html" class="nav-link">Гостиницы</a>
-            </li>
-            <li class="nav-item">
-              <button class="search-button" type="button" name="search">
-                <span class="visually-hidden">Поиск по сайту</span>
-              </button>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link" title="Избранное">
-                <span class="visually-hidden">Избранное</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link btn">хочу сюда!</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+  <body class="page">
+    <header class="page-header">
+      <nav class="nav">
+        <a href="/" class="logo">
+          <img src="/img/logo.svg" alt="Логотип города Седона">
+        </a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">О седоне</a>
+          </li>
+          <li class="nav-item">
+            <a href="/catalog.html" class="nav-link active-lin">Гостиницы</a>
+          </li>
+        </ul>
+        <!-- в ответе так, но я пока не понимаю почему -->
+        <a class="icon-button" href="#">
+          <span class="visually-hidden">Поиск</span>
+        </a>
+        <!-- <button class="search-button" type="button" name="search">
+          <span class="visually-hidden">Поиск по сайту</span>
+        </button> -->
+        <a href="#" class="icon-button" title="Избранное">
+          <span class="visually-hidden">Избранное</span>
+          <span class="liked-counter">12</span>
+        </a>
+        <a href="#" class="button button-secondary">хочу сюда!</a>
+      </nav>
+    </header>
       <main class="index-main">
+        <h1 class="visually-hidden">
+          Седона - место лучше гранд-каньона
+        </h1>
         <section class="hero">
-          <h1 class="visually-hidden">
-            Седона - место лучше гранд-каньона
-          </h1>
-          <p class="hero-decorative-text">
-            <span>welcome</span>
-            <span>- to the gorgeous -</span>
-            <span>Sedona</span>
-            <q title="* По мнению очень надежного источника">Because the Great Canyon sucks!</q>
-          </p>
-          <p class="hero-descr">
+          <p class="hero-descr section-title">
             Седона - небольшой городок в Аризоне, заслуживающий большего!
           </p>
-          <p class="hero-text">
+          <p class="hero-text section-descr">
             Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
           </p>
         </section>
         <section class="reasons">
           <h2 class="reasons-title visually-hidden">
-            пять причин посетить Седону
+            Причины посетить Седону
           </h2>
           <ul class="reasons-list">
-            <li class="reasons-item">
+            <li class="reasons-item reasons-item-large">
               <h3 class="reasons-item-title">Настоящий городок</h3>
               <span class="reasons-item-count">-№1-</span>
               <p class="reasons-item-text">
                 Седона — не аттракцион для туристов, там течёт
                 своя жизнь
               </p>
-              <img src="#" alt="Уютный ресторан в Седоне" class="reasons-image">
+              <img src="/img/photo-1.jpg" alt="Уютный ресторан в Седоне" class="reasons-image" width="800" height="384">
               <ul class="reasons-sublist">
                 <li class="reasons-subitem">
                   <h4 class="reasons-sub-item-title">Жильё</h4>
                   <p class="reasons-subitem-text">
-                    Рекомендуем пожить в настоящем мотеле,
-всё как в кино!
+                    Рекомендуем пожить в настоящем мотеле, всё как в кино!
                   </p>
                 </li>
                 <li class="reasons-subitem">
                   <h4 class="reasons-sub-item-title">Еда</h4>
                   <p class="reasons-subitem-text">
-                    Всегда заказывайте
-топовый фирменный бургер, вы не разочаруетесь!
+                    Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
                   </p>
                 </li>
                 <li class="reasons-subitem">
                   <h4 class="reasons-sub-item-title">Сувениры</h4>
                   <p class="reasons-subitem-text">
-                    Не только китайского,
-но и настоящего местного производства!
+                    Не только китайского, но и настоящего местного производства!
                   </p>
                 </li>
               </ul>
             </li>
-            <li class="reasons-item">
+            <li class="reasons-item reasons-item-large">
               <h3 class="reasons-item-title">Там есть Мост дьявола</h3>
               <span class="reasons-item-count">-№2-</span>
               <p class="reasons-item-text">
                 Да, по нему можно пройти! Если вы осмелитесь, разумеется
               </p>
-              <img src="#" alt="Мост дьявола собственной персоной" class="reasons-image">
+              <img src="/img/photo-2.jpg" alt="Мост дьявола собственной персоной" class="reasons-image" width="800" height="384">
             </li>
             <li class="reasons-item">
               <h3 class="reasons-item-title">Небольшая площадь</h3>
@@ -118,52 +110,54 @@
           </ul>
         </section>
         <section class="interested">
-          <h2 class="ineterested-title">
+          <h2 class="ineterested-title section-title">
             Заинтересовались?
           </h2>
-          <p class="interested-descr">
-            Укажите предполагаемые даты поездки,
-и мы покажем вам лучшие предложения гостиниц в Седоне
+          <p class="interested-descr section-descr">
+            Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a href="/catalog.html" class="interested-link btn" title="Поможем найти жилье в Седоне">
+          <a href="/catalog.html" class="button button-secondary button-large" title="Поможем найти жилье в Седоне">
             Поиск гостиницы в Седоне
           </a>
         </section>
         <section class="newsletter">
-          <h2 class="hewsletter-title">
+          <h2 class="hewsletter-title section-title">
             Подпишитесь на рассылку
           </h2>
-          <p class="newsletter-descr">
-            Только полезная информация и никакого спама,
-  честное бойскаутское!
+          <p class="newsletter-descr section-descr">
+            Только полезная информация и никакого спама, честное бойскаутское!
           </p>
-          <form action="#" method="post">
-            <label class="visually-hidden" for="email">E-mail</label>
-            <input class="newsletter-input" type="email" name="email" id="email" placeholder="Ваш e-mail">
-            <button type="submit">подписаться</button>
+          <form class="newsletter-form" action="#" method="post">
+            <label class="newsletter-field" >
+              <span class="visually-hidden">E-mail</span>
+              <input class="newsletter-input" type="email" name="email" placeholder="Ваш e-mail">
+            </label>
+            <button class="button button-large" type="submit">подписаться</button>
           </form>
         </section>
-      </main>
-      <footer class="page-footer">
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="#" class="social-link" title="twitter">
-              <span class="visually-hidden">Твиттер</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="#" class="social-link" title="facebook">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="#" class="social-link" title="youtube">
-              <span class="visually-hidden">Ю-тьюб</span>
-            </a>
-          </li>
-        </ul>
-        <address><a href="tel:+78128121212">+7 (812) 812-12-12</a></address>
-        <img src="#" alt="Logo of the creator: HTML academy" class="copyright">
-      </footer>
+    </main>
+    <footer class="page-footer">
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="#" class="social-link" title="twitter">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link" title="facebook">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link" title="youtube">
+            <span class="visually-hidden">Ю-тьюб</span>
+          </a>
+        </li>
+      </ul>
+      <address class="footer-phone"><a href="tel:+78128121212" class="footer-phone-link">+7 (812) 812-12-12</a></address>
+      <a href="#" class="copyright-link">
+        <img src="/img/logo_htmlacademy.png" alt="Logo of the creator: HTML academy" class="copyright" width="115" height="34">
+      </a>
+    </footer>
   </body>
 </html>
