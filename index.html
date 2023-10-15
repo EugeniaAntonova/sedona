@@ -6,6 +6,7 @@
     <meta name="keywords" content="седона, отпуск, америка, путешествия, большой каньон отстой">
     <title>HTML Academy: Sedona</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body class="page">
     <header class="page-header">
@@ -24,18 +25,18 @@
             <a href="/catalog.html" class="nav-link active-lin">Гостиницы</a>
           </li>
         </ul>
-        <!-- в ответе так, но я пока не понимаю почему -->
-        <a class="icon-button" href="#">
-          <span class="visually-hidden">Поиск</span>
-        </a>
-        <!-- <button class="search-button" type="button" name="search">
-          <span class="visually-hidden">Поиск по сайту</span>
-        </button> -->
-        <a href="#" class="icon-button" title="Избранное">
-          <span class="visually-hidden">Избранное</span>
-          <span class="liked-counter">12</span>
-        </a>
-        <a href="#" class="button button-secondary">хочу сюда!</a>
+        <div class="user-links">
+          <a class="icon-button" href="#">
+            &#128269;
+            <span class="visually-hidden">Поиск</span>
+          </a>
+          <a href="#" class="icon-button" title="Избранное">
+            <span class="visually-hidden">Избранное</span>
+            &#9825;
+            <span class="liked-counter">12</span>
+          </a>
+          <a href="#" class="button button-secondary">хочу сюда!</a>
+        </div>
       </nav>
     </header>
       <main class="index-main">
@@ -54,31 +55,30 @@
           <h2 class="reasons-title visually-hidden">
             Причины посетить Седону
           </h2>
-          <ul class="reasons-list">
+          <ol class="reasons-list">
             <li class="reasons-item reasons-item-large">
               <h3 class="reasons-item-title">Настоящий городок</h3>
-              <span class="reasons-item-count">-№1-</span>
               <p class="reasons-item-text">
                 Седона — не аттракцион для туристов, там течёт
                 своя жизнь
               </p>
               <img src="/img/photo-1.jpg" alt="Уютный ресторан в Седоне" class="reasons-image" width="800" height="384">
               <ul class="reasons-sublist">
-                <li class="reasons-subitem">
-                  <h4 class="reasons-sub-item-title">Жильё</h4>
-                  <p class="reasons-subitem-text">
+                <li class="reasons-item">
+                  <h4 class="reasons-item-title">Жильё</h4>
+                  <p class="reasons-item-text">
                     Рекомендуем пожить в настоящем мотеле, всё как в кино!
                   </p>
                 </li>
-                <li class="reasons-subitem">
-                  <h4 class="reasons-sub-item-title">Еда</h4>
-                  <p class="reasons-subitem-text">
+                <li class="reasons-item">
+                  <h4 class="reasons-item-title">Еда</h4>
+                  <p class="reasons-item-text">
                     Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
                   </p>
                 </li>
-                <li class="reasons-subitem">
-                  <h4 class="reasons-sub-item-title">Сувениры</h4>
-                  <p class="reasons-subitem-text">
+                <li class="reasons-item">
+                  <h4 class="reasons-item-title">Сувениры</h4>
+                  <p class="reasons-item-text">
                     Не только китайского, но и настоящего местного производства!
                   </p>
                 </li>
@@ -86,7 +86,6 @@
             </li>
             <li class="reasons-item reasons-item-large">
               <h3 class="reasons-item-title">Там есть Мост дьявола</h3>
-              <span class="reasons-item-count">-№2-</span>
               <p class="reasons-item-text">
                 Да, по нему можно пройти! Если вы осмелитесь, разумеется
               </p>
@@ -94,20 +93,17 @@
             </li>
             <li class="reasons-item">
               <h3 class="reasons-item-title">Небольшая площадь</h3>
-              <span class="reasons-item-count">-№3-</span>
               <p class="reasons-item-text">Все достопримечательности находятся очень близко</p>
             </li>
             <li class="reasons-item">
               <h3 class="reasons-item-title">Красивая дорога</h3>
-              <span class="reasons-item-count">-№4-</span>
               <p class="reasons-item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="reasons-item">
               <h3 class="reasons-item-title">Мало туристов</h3>
-              <span class="reasons-item-count">-№5-</span>
               <p class="reasons-item-text">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
-          </ul>
+          </ol>
         </section>
         <section class="interested">
           <h2 class="ineterested-title section-title">
@@ -120,7 +116,7 @@
             Поиск гостиницы в Седоне
           </a>
         </section>
-        <section class="newsletter">
+        <section class="newsletter index-newsletter">
           <h2 class="hewsletter-title section-title">
             Подпишитесь на рассылку
           </h2>
